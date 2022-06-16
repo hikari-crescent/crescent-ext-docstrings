@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "crescent-ext-docstrings"
+version = "0.1.0"
+description = "A docstring parser for Crescent."
+authors = ["Lunarmagpie <Bambolambo0@gmail.com>"]
+license = "MPLv2"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+hikari-crescent = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.961"
+black = "^22.3.0"
+flake8 = "^4.0.1"
+nox = "^2022.1.7"
+codespell = "^2.1.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
