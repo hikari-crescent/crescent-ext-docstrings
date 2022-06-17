@@ -1,6 +1,6 @@
 from __future__ import annotations
 from functools import partial
-from typing import Callable
+from typing import Callable, overload
 
 from crescent import CommandCallbackT
 from crescent.internal import MetaStruct, AppCommandMeta
@@ -23,16 +23,26 @@ def _lookup_arg(name: str, app: AppCommandMeta) -> CommandOption | None:
 META_T = MetaStruct[CommandCallbackT, AppCommandMeta]
 
 
+@overload
+def parse_doc(meta: META_T, /) -> META_T:
+    ...
+
+
+@overload
+def parse_doc(*, style: Style = ...) -> Callable[[META_T], META_T]:
+    ...
+
+
 def parse_doc(
     meta: META_T | None = None,
     style: Style = Style.AUTO,
-) -> META_T:
+) -> META_T | Callable[[META_T], META_T]:
 
     if meta is None:
         return partial(
             parse_doc,
             style=style,
-        )  # type: ignore
+        )
 
     docs = CLASS_DOCSTRINGS.get(id(meta)) or meta.callback.__doc__
 
