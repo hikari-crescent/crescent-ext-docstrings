@@ -1,4 +1,5 @@
 from enum import IntEnum
+
 from docstring_parser import DocstringStyle
 
 

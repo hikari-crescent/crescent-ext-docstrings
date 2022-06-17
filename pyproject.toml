@@ -1,6 +1,6 @@
 [tool.poetry]
 authors = ["Lunarmagpie <Bambolambo0@gmail.com>"]
-description = ""
+description = "A docstring parser for hikari-crescent."
 license = "MPL-2.0"
 name = "crescent-ext-docstrings"
 packages = [
@@ -24,6 +24,13 @@ nox = "^2022.1.7"
 [tool.mypy]
 strict = true
 namespace_packages = true
+warn_return_any = true
+warn_redundant_casts = true
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+skip-magic-trailing-comma=true
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
