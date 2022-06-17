@@ -5,7 +5,7 @@ from crescent.internal import MetaStruct, AppCommandMeta
 from docstring_parser import DocstringStyle, parse
 from hikari import CommandOption
 from .style import Style
-from .exceptions import ParsingException
+from .exceptions import ParsingError
 from .classes import CLASS_DOCSTRINGS
 
 
@@ -32,7 +32,7 @@ def parse_doc(
     for param in parsed_docs.params:
         app_option = _lookup_arg(param.arg_name, meta.metadata)
         if app_option is None:
-            raise ParsingException(
+            raise ParsingError(
                 f"Parameter `{param.arg_name}` is not present in the signature of `{meta.callback.__name__}`."
             )
 
