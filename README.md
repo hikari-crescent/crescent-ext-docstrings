@@ -4,7 +4,7 @@ A docstring parser for [hikari-crescent](https://github.com/magpie-dev/hikari-cr
 
 ## Installation
 ```
-pip install git+https://github.com/Lunarmagpie/crescent-ext-docstrings
+pip install crescent-ext-docstrings
 ```
 
 ## Usage
