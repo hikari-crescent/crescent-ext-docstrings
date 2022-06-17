@@ -6,7 +6,7 @@ name = "crescent-ext-docstrings"
 packages = [
   {include = "crescent/ext/docstrings" },
 ]
-version = "0.1.0"
+version = "0"
 
 [tool.poetry.dependencies]
 docstring-parser = "^0.14.1"
