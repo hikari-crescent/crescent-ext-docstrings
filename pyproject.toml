@@ -23,6 +23,7 @@ nox = "^2022.1.7"
 
 [tool.mypy]
 strict = true
+namespace_packages = true
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
