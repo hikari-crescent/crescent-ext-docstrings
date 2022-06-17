@@ -18,7 +18,7 @@ def _lookup_arg(name: str, app: AppCommandMeta) -> CommandOption | None:
     return None
 
 
-def docstring(
+def parse_doc(
     meta: MetaStruct[CommandCallbackT, AppCommandMeta], *, style: Style = Style.AUTO
 ) -> MetaStruct[CommandCallbackT, AppCommandMeta]:
 

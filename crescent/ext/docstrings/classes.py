@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from typing import Any
-from crescent import command
 
 CLASS_DOCSTRINGS: dict[Any, str | None] = {}
 
@@ -11,7 +10,7 @@ from crescent.commands import decorators
 cmd_dec = decorators.command
 
 
-def cursed_command_dec(cls_or_func, *args, **kwargs):
+def cursed_command_dec(cls_or_func: Any, *args: Any, **kwargs: Any) -> Any:
 
     meta = cmd_dec(cls_or_func, *args, **kwargs)
 
@@ -21,4 +20,4 @@ def cursed_command_dec(cls_or_func, *args, **kwargs):
     return meta
 
 
-decorators.command = cursed_command_dec
+decorators.command = cursed_command_dec  # type: ignore
