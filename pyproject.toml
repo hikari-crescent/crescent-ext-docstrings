@@ -4,14 +4,15 @@ description = "A docstring parser for Crescent."
 license = "MPL-2.0"
 name = "crescent-ext-docstrings"
 packages = [
-  {include = "crescent"},
+  {include = "docstrings"},
 ]
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-"crescent.ext.docstrings" = {path = "crescent/ext/docstrings"}
+docstring-parser = "^0.14.1"
 hikari-crescent = "^0.2.0"
 python = ">=3.8,<3.11"
+hikari = "^2.0.0-alpha.108"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
@@ -24,3 +25,6 @@ nox = "^2022.1.7"
 [build-system]
 build-backend = "poetry.core.masonry.api"
 requires = ["poetry-core>=1.0.0"]
+
+[tool.mypy]
+strict = true

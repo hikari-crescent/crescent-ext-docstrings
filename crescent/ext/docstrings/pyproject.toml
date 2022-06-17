@@ -1,6 +1,0 @@
-[tool.poetry]
-authors = ["Lunarmagpie <Bambolambo0@gmail.com>"]
-description = "A docstring parser for Crescent."
-license = "MPL-2.0"
-name = "crescent.ext.docstrings"
-version = "0.1.0"

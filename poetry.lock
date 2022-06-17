@@ -160,6 +160,14 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "docstring-parser"
+version = "0.14.1"
+description = "Parse Python docstrings in reST, Google and Numpydoc format"
+category = "main"
+optional = false
+python-versions = ">=3.6,<4.0"
+
+[[package]]
 name = "filelock"
 version = "3.7.1"
 description = "A platform independent file lock."
@@ -460,7 +468,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "17c894265740714dcc06594c8776a8bcd7f404bff1d70a1848f4d7cfe70ffcce"
+content-hash = "9976ad505ada7310e87c4ad5d84d32b13f2b2e0b606ec17e192bc31b8d9ef936"
 
 [metadata.files]
 aiohttp = [
@@ -605,6 +613,10 @@ croniter = [
 distlib = [
     {file = "distlib-0.3.4-py2.py3-none-any.whl", hash = "sha256:6564fe0a8f51e734df6333d08b8b94d4ea8ee6b99b5ed50613f731fd4089f34b"},
     {file = "distlib-0.3.4.zip", hash = "sha256:e4b58818180336dc9c529bfb9a0b58728ffc09ad92027a3f30b7cd91e3458579"},
+]
+docstring-parser = [
+    {file = "docstring_parser-0.14.1-py3-none-any.whl", hash = "sha256:14ac6ec1f1ba6905c4d8cb90fd0bc55394f5678183752c90e44812bf28d7a515"},
+    {file = "docstring_parser-0.14.1.tar.gz", hash = "sha256:2c77522e31b7c88b1ab457a1f3c9ae38947ad719732260ba77ee8a3deb58622a"},
 ]
 filelock = [
     {file = "filelock-3.7.1-py3-none-any.whl", hash = "sha256:37def7b658813cda163b56fc564cdc75e86d338246458c4c28ae84cabefa2404"},
