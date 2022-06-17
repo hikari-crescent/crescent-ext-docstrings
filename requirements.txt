@@ -1,0 +1,4 @@
+docstring-parser = "^0.14.1"
+hikari-crescent = "^0.2.0"
+python = ">=3.8,<3.11"
+hikari = "^2.0.0-alpha.108"
