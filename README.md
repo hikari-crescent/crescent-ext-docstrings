@@ -41,7 +41,6 @@ class ClassExample:
     Args:
         a: This is the first param's description.
         b: This is the first param's description.
-
     """
 
     a = crescent.option(str)
@@ -61,9 +60,15 @@ Since this library relies on [docstring-parser](https://github.com/rr-/docstring
 import docstrings
 
 @bot.include
-@docstrings.parse_doc(style=docstrings.Style.)
+@docstrings.parse_doc(style=docstrings.Style.REST)
 @crescent.command
-async def example(ctx: crescent.Command) -> None:
+async def example(ctx: crescent.Command, a: str) -> None:
+    """
+    Rest style description.
+
+    :param a:
+        The parameter.
+    """
     ...
 
 ```

@@ -1,5 +1,4 @@
 from __future__ import annotations
-import sys
 
 from typing import Any
 from weakref import finalize
@@ -10,6 +9,7 @@ CLASS_DOCSTRINGS: dict[Any, str | None] = {}
 
 
 cmd_dec = decorators.command
+
 
 def cursed_command_dec(cls_or_func: Any, *args: Any, **kwargs: Any) -> Any:
 
