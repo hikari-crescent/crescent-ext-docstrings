@@ -11,8 +11,8 @@ version = "0"
 
 [tool.poetry.dependencies]
 docstring-parser = "^0.14.1"
-hikari-crescent = "^0.3.0"
-python = ">=3.8,<3.11"
+hikari-crescent = "^0.5.0"
+python = ">=3.8,<3.12"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
