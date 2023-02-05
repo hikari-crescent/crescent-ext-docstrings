@@ -43,7 +43,7 @@ def parse_doc(
     docs = includable.metadata.owner.__doc__
 
     if not docs:
-        return includable.metadata.owner
+        return includable.metadata.owner  # type: ignore
 
     parsed_docs = parse(docs, style=DocstringStyle(style))
 
